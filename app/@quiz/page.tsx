@@ -14,12 +14,12 @@ export default function Quiz() {
   const [questions, setQuestions] = useState<any>(null);
   const [answer, setAnswer] = useState("");
   const [loading, setLoading] = useState(false);
-  const changeStatus = useQuizConfig((state:any) => state.changeStatus);
+  // const changeStatus = useQuizConfig((state:any) => state.changeStatus);
   const config = useQuizConfig((state:any) => state.config);
-  const addLevel = useQuizConfig((state:any) => state.addLevel);
-  const addCategory = useQuizConfig((state:any) => state.addCategory);
-  const addType = useQuizConfig((state:any) => state.addType);
-  const addQuestionNumber = useQuizConfig((state:any) => state.addQuestionNumber);
+  // const addLevel = useQuizConfig((state:any) => state.addLevel);
+  // const addCategory = useQuizConfig((state:any) => state.addCategory);
+  // const addType = useQuizConfig((state:any) => state.addType);
+  // const addQuestionNumber = useQuizConfig((state:any) => state.addQuestionNumber);
   const setScore = useQuizConfig((state:any) => state.setScore);
 
   useEffect(() => {
